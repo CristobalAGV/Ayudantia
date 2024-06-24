@@ -5,7 +5,7 @@ matriz=[
 ]
 
 def escribir_matriz_archivo(matriz, nombre_archivo):
-    with open(nombre_archivo, "w") as archivo:
+    with open(nombre_archivo, "w") as archivo:   
         for fila in matriz:
             archivo.write(''.join(map(str, fila))+"\n")
 
